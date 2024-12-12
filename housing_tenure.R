@@ -17,9 +17,6 @@ library(pdp)
 
 # MERGE ALL THE REQUIRED DATASETS TOGETHER FOR 2010
 
-https://data.census.gov/table/ACSST5Y2010.S2503?q=S2503%20FINANCIAL%20CHARACTERISTICS&g=010XX00US$0600000_040XX00US06$0600000
-
-```{r}
 
 county_data_2010 <- read.csv(
   "/Users/pruyontrarak/Downloads/ACSST5Y2010.S2503_2024-12-08T035314/ACSST5Y2010.S2503-Data.csv", 
@@ -112,12 +109,6 @@ california_58_counties_2010 <- new_california_58_counties_2010 %>%
 
 
 
-
-https://www.census.gov/programs-surveys/popest/technical-documentation/research/evaluation-estimates/2020-evaluation-estimates/2010s-county-detail.html?utm_source=chatgpt.com
-
-
-
-
 demographics_data_2010 <- read.csv("/Users/pruyontrarak/Downloads/CC-EST2020-ALLDATA-06.csv", header = TRUE)
 
 
@@ -172,9 +163,6 @@ colnames(merged_2010_data) <- paste0(colnames(merged_2010_data), "_2010")
 
 # Californa Data Set Up for 2020
 
-https://data.census.gov/table/ACSST5Y2020.S2503?q=tenure%20California%20counties%202020&g=010XX00US$0600000_040XX00US06$0600000
-
-```{r}
 
 county_data_2020 <- read.csv(
   "/Users/pruyontrarak/Downloads/ACSST5Y2020.S2503_2024-11-25T162155/ACSST5Y2020.S2503-Data.csv", 
@@ -261,8 +249,6 @@ california_58_counties_2020 <- new_california_58_counties_2020 %>%
 
 
 # Looking at second dataset to see how race and age and gender group play into this
-
-https://www.census.gov/programs-surveys/popest/technical-documentation/research/evaluation-estimates/2020-evaluation-estimates/2010s-county-detail.html?utm_source=chatgpt.com
 
 
 
